@@ -2,8 +2,6 @@
 
 ## 개요 
 
----
-
 대학교 졸업 프로젝트(n2t)의 아이디어를 활용해서 만든 문제 생성 API입니다.
 
 저는 평소 공부한 내용을 Notion에 정리합니다. 그래서 Notion에 정리한 내용을 서비스 페이지에 옮겨 적거나 하는 행위 대신에  notion link를 통해 바로 문제를 생성해주는 서비스가 있으면 좋겠다고 생각이 들어 만들게 되었습니다. 
@@ -12,16 +10,12 @@
 
 ## 기능
 
----
-
 1. Notionlink를 통해 Notion PageId를 추출한다. 
 2. 추출한 PageId를 통해 페이지의 글 정보를 가져온다. 
 3. 글 정보를 [지문] 으로 묶어 객관식 문제를 생성한다.
 4. 생성한 문제를 [문제번호], [문제내용], [정답], [배경정보] 로 나누어 DB에 저장한다.  
 
 ## API Spec
-
----
 
 | Method | URL             | Request             | Response                   |
 |--------|-----------------|---------------------|----------------------------|
@@ -46,8 +40,6 @@
 
 
 ## Dependencies
-
----
 
 ### 1. gpt-3.5-turbo API
 
@@ -102,12 +94,10 @@ Page ID : c0e156d72f8345e29c5ed771ca0bb194
 
 ## Sequence Diagram
 
----
+![image](https://github.com/1hyunjin/gpt-exam-question-generator/assets/38430900/b6910dd6-44ea-40f6-8743-7c82ac8d7c0d)
 
 
 ## 데이터베이스
-
----
 
 ### question
 | 필드              | 타입           | Key |
@@ -121,8 +111,6 @@ Page ID : c0e156d72f8345e29c5ed771ca0bb194
 
 
 ## 기술 스택
-
----
 
 - Spring Boot
 - Java
